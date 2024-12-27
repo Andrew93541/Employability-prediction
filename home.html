@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employability Prediction</title>
+    <link rel="stylesheet" href="home.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">Employability Predictor</div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#form">Predict</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Welcome to the Employability Predictor</h1>
+            <p>Get insights into your career readiness and learn how to improve.</p>
+            <a href="#form" class="btn">Get Started</a>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We use data-driven models to predict employability and provide actionable recommendations for skill improvement.</p>
+        </section>
+
+        <section id="form">
+            <h2>Predict Your Employability</h2>
+            <form id="prediction-form">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="skills">Top Skills (comma-separated):</label>
+                <input type="text" id="skills" name="skills" required>
+                
+                <label for="experience">Years of Experience:</label>
+                <input type="number" id="experience" name="experience" min="0" required>
+                
+                <button type="submit" class="btn">Submit</button>
+            </form>
+            <div id="result"></div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <p>Contact us at <a href="mailto:info@employabilitypredictor.com">info@employabilitypredictor.com</a></p>
+    </footer>
+</body>
+</html>
