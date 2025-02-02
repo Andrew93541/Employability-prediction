@@ -92,6 +92,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // Handle basic conversation
     function handleBasicConversation(message) {
         const basicResponses = {
+            "hi": "Hi there!",
+            "help me": "How can i help you?",
             "hello": "Hi there! How can I assist you today?",
             "how are you": "I'm doing great, thank you! How about you?",
             "bye": "Goodbye! Have a great day!",
