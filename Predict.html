@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employability Prediction</title>
+    <link rel="icon"href="/imgvideos/Employability Prediction.jpg"/>
+    <link rel="stylesheet" href="/Predict.css"/>
+    <script defer src="/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"/>
+  </head>
+  <body>
+    <header>
+      <div class="logo">Employability Predictor</div>
+      <nav>
+        <ul>
+          <li><a href="home.html">About</a></li>
+          <li><a href="Predict.html">Predict</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="login.html" class="login-link">
+              <img src="imgvideos/key.png"alt="Login"class="nav-icon"/>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="hero">
+      <video autoplay loop muted class="hero-video">
+        <source
+          src="imgvideos/back.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <div class="hero-text">
+        <h1>Welcome to the Employability Predictor</h1>
+        <p>Get insights into your career readiness and learn how to improve.</p>
+      </div>
+    </section>
+
+    <section id="form">
+      <h2>Predict Your Employability</h2>
+      <form id="prediction-form">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="skills">Top Skills (comma-separated):</label>
+        <input type="text" id="skills" name="skills" required />
+
+        <label for="experience">Years of Experience:</label>
+        <input
+          type="number"
+          id="experience"
+          name="experience"
+          min="0"
+          required
+        />
+
+        <button type="submit" class="btn">Submit</button>
+      </form>
+      <div id="result"></div>
+    </section>
+
+    <footer id="contact">
+      <p>
+        Contact us at
+        <a href="mailto:info@employabilitypredictor.com"
+          >info@employabilitypredictor.com</a
+        >
+      </p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
