@@ -176,7 +176,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
-                    "Authorization": "Bearer YOUR_OPENAI_API_KEY"
+                    "Authorization": "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"
                 },
                 body: JSON.stringify({
                     model: "gpt-3.5-turbo",
