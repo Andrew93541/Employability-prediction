@@ -4,10 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Employability Prediction</title>
-    <link rel="icon"href="/imgvideos/Employability Prediction.jpg"/>
-    <link rel="stylesheet" href="/Predict.css"/>
+    <link rel="icon" href="/imgvideos/Employability Prediction.jpg" />
+    <link rel="stylesheet" href="/Predict.css" />
     <script defer src="/script.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+    />
   </head>
   <body>
     <header>
@@ -19,7 +22,7 @@
           <li><a href="#contact">Contact</a></li>
           <li>
             <a href="login.html" class="login-link">
-              <img src="imgvideos/key.png"alt="Login"class="nav-icon"/>
+              <img src="imgvideos/key.png" alt="Login" class="nav-icon" />
             </a>
           </li>
         </ul>
@@ -28,10 +31,7 @@
 
     <section id="hero">
       <video autoplay loop muted class="hero-video">
-        <source
-          src="imgvideos/back.mp4"
-          type="video/mp4"
-        />
+        <source src="imgvideos/back.mp4" type="video/mp4" />
       </video>
       <div class="hero-text">
         <h1>Welcome to the Employability Predictor</h1>
@@ -68,12 +68,30 @@
     <footer id="contact">
       <p>
         Contact us at
-        <a href="mailto:info@employabilitypredictor.com"
-          >info@employabilitypredictor.com</a
-        >
+        <a href="mailto:info@employabilitypredictor.com">info@employabilitypredictor.com</a>
       </p>
     </footer>
 
+    <!-- Chatbot Button -->
+    <button id="chatbot-btn" class="chatbot-btn">💬</button>
+
+    <!-- Chatbot Window -->
+    <div id="chatbox-container">
+      <div id="chatbox">
+        <div id="chatbox-header">
+          <h3>AI Job Assistant</h3>
+          <!-- Close Button -->
+          <button id="close-chatbox" class="close-chatbox-btn">X</button>
+        </div>
+        <div id="chatbox-messages"></div>
+        <div id="chatbox-input">
+          <input type="text" id="chat-input" placeholder="Ask me about jobs..." />
+          <button id="send-btn">Send</button>
+        </div>
+      </div>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="/script.js"></script>
   </body>
 </html>

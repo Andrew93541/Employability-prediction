@@ -97,7 +97,6 @@ header nav ul li a {
 #form {
     background-color: #fff;
     padding: 40px;
-    margin: 20px 0;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -182,10 +181,126 @@ header nav ul li a {
     background: #e64a19;
 }
 
-/* Footer Section */
-footer {
-    background: #493D9E;
-    color: #fff;
-    text-align: center;
-    padding: 10px 20px;
+/* Chatbot Button and Window Styles */
+.chatbot-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #493d9e; /* Header color */
+    color: white;
+    font-size: 24px;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
 }
+
+.chatbot-btn:hover {
+    background-color: #ff9f00;
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+#chatbox-container {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    display: none;
+    z-index: 999;
+}
+
+#chatbox {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+#chatbox-header {
+    background-color: #493d9e;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+#chatbox-messages {
+    padding: 10px;
+    height: 150px;
+    overflow-y: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+#chatbox-input {
+    display: flex;
+    padding: 10px;
+    background-color: #f7f7f7;
+}
+
+#chatbox-input input {
+    width: 80%;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+#chatbox-input button {
+    width: 20%;
+    padding: 5px;
+    border: none;
+    background-color: #493d9e;
+    color: white;
+    border-radius: 5px;
+}
+
+#chatbox-container.active {
+    display: block;
+}
+/* Close button in the chatbox header */
+.close-chatbox-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+.close-chatbox-btn:hover {
+    color: #ff5722;
+}  
+
+/* Assuming the header color is #333 (adjust this if your header color is different) */
+#contact {
+    background-color: #493D9E; /* Same as the header background */
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1rem;
+    color: #fff; /* Text color white for contrast */
+    border-top: 2px solid #c37a3e;
+  }
+  
+  #contact a {
+    color: #c37a3e;
+    text-decoration: none;
+  }
+  
+  #contact a:hover {
+    text-decoration: underline;
+  }
+  
+  #contact p {
+    margin: 0;
+    font-weight: 400;
+  }
+  
